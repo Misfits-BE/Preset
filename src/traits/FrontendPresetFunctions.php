@@ -22,7 +22,7 @@ trait FrontendPresetFunctions
     {
         (new Filesystem)->delete(resource_path('assets/sass/app.scss'));
 
-        copy(__DIR__ . '/stubs/scss/frontend.scss', resource_path('assets/sass/frontend.scss'));
+        copy(__DIR__ . '/../stubs/scss/frontend.scss', resource_path('assets/sass/frontend.scss'));
     }
 
     /**
@@ -34,8 +34,8 @@ trait FrontendPresetFunctions
     {
         (new Filesystem)->delete(resource_path('assets/js/app.js')); 
 
-        copy(__DIR__ . '/stubs/js/frontend.js', resource_path('assets/js/frontend.js'));
-        copy(__DIR__ . '/stubs/js/backend.js', resource_path('assets/js/backend.js'));
+        copy(__DIR__ . '/../stubs/js/frontend.js', resource_path('assets/js/frontend.js'));
+        copy(__DIR__ . '/../stubs/js/backend.js', resource_path('assets/js/backend.js'));
     }
 
     /**
@@ -47,6 +47,6 @@ trait FrontendPresetFunctions
     {
         (new Filesystem)->delete(resource_path('views/welcome.blade.php'));
         
-        copy(__DIR__ . '/stubs/views/welcome.blade.php', resource_path('views/welcome.blade.php'));
+        copy(__DIR__ . '/../stubs/views/welcome.blade.php', resource_path('views/welcome.blade.php'));
     }
 }

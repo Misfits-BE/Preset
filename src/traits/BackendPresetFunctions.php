@@ -21,7 +21,7 @@ trait BackendPresetFunctions
      */
     protected static function updateSassBackend(): void 
     {
-        copy(__DIR__ . '/stubs/scss/backend.scss', resource_path('assets/sass/backend.scss'));
+        copy(__DIR__ . '/../stubs/scss/backend.scss', resource_path('assets/sass/backend.scss'));
     }
 
     /**
@@ -34,7 +34,7 @@ trait BackendPresetFunctions
         file_put_contents(app_path('Http\Controllers\HomeController.php'), static::compileControllerStub()); 
         file_put_contents(base_path('routes/web.php'), static::routesAuthencation(), FILE_APPEND);
 
-        (new Filesystem)->copyDirectory(__DIR__ . '/stubs/views', resource_path('views'));
+        (new Filesystem)->copyDirectory(__DIR__ . '/../stubs/views', resource_path('views'));
     }
 
     /**
@@ -49,7 +49,7 @@ trait BackendPresetFunctions
         return str_replace(
             '{{ namespace }}', 
             Container::getInstance()->getNamespace(),
-            file_get_contents(__DIR__ . '/stubs/controllers/HomeController.stub')
+            file_get_contents(__DIR__ . '/../stubs/controllers/HomeController.stub')
         );
     }
 
