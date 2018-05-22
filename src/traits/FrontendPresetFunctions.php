@@ -21,6 +21,7 @@ trait FrontendPresetFunctions
     protected static function updateSassFrontend(): void 
     {
         (new Filesystem)->delete(resource_path('assets/sass/app.scss'));
+        (new Filesystem)->delete(public_path('assets/sass/app.css'));
 
         copy(__DIR__ . '/../stubs/scss/frontend.scss', resource_path('assets/sass/frontend.scss'));
     }
@@ -33,6 +34,7 @@ trait FrontendPresetFunctions
     protected static function updateBootstrapping(): void 
     {
         (new Filesystem)->delete(resource_path('assets/js/app.js')); 
+        (new FileSystem)->delete(public_path('js/app.js'));
 
         copy(__DIR__ . '/../stubs/js/frontend.js', resource_path('assets/js/frontend.js'));
         copy(__DIR__ . '/../stubs/js/backend.js', resource_path('assets/js/backend.js'));
