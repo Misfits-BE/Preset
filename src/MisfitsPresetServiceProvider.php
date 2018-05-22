@@ -21,6 +21,12 @@ class MisfitsPresetServiceProvider extends ServiceProvider
      */
     public function boot(): void 
     {
+        /**
+         * Artisan macro for 'php artisan preset misfits'
+         * 
+         * @param  mixed $command The artisan command variable that handles the output.
+         * @return void
+         */
         PresetCommand::macro('misfits', function ($command): void {
             MisfitsPreset::install(); 
 
@@ -28,6 +34,12 @@ class MisfitsPresetServiceProvider extends ServiceProvider
             $command->info('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
 
+        /**
+         * Artisan macro for 'php artisan preset misfits-auth'
+         * 
+         * @param  mixed $command The artisan command variable that handles the output.
+         * @return void 
+         */
         PresetCommand::macro('misfits-auth', function ($command): void {
             MisfitsPreset::installAuth(); 
 

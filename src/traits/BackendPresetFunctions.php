@@ -31,20 +31,20 @@ trait BackendPresetFunctions
      */
     protected static function scaffoldAuth(): void 
     {
-        file_put_contents(app_path('Http\Controllers\HomeController.php'), static::compileControllerStub()); 
+        file_put_contents(app_path('Http\Controllers\HomeController.php'), static::compileControllerStubHome()); 
         file_put_contents(base_path('routes/web.php'), static::routesAuthencation(), FILE_APPEND);
 
         (new Filesystem)->copyDirectory(__DIR__ . '/../stubs/views', resource_path('views'));
     }
 
     /**
-     * Compile the HomeController stube
+     * Compile the HomeController stub
      * --- 
      * Needed for rename the {{ namespace }} placeholder to the actual application namespace
      * 
      * @return void
      */
-    protected static function compileControllerStub(): string 
+    protected static function compileControllerStubHome(): string 
     {
         return str_replace(
             '{{ namespace }}', 
