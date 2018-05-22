@@ -4,7 +4,8 @@ namespace Misfits\Preset;
 
 use Illuminate\Container\Container; 
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Foundation\Console\Presets\Preset; 
+use Illuminate\Foundation\Console\Presets\Preset;
+use Misfits\Preset\Traits\{BackendPresetFunctions, FrontendPresetFunctions};
 
 /**
  * Class MisiftsPreset 
