@@ -1,0 +1,21 @@
+{
+    "name": "misfits/preset", 
+    "description": "Laravel 5.6.x frontend preset for the Misfits-BE organization", 
+    "keywords": ["laravel", "preset", "misfits"],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "5.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Misfits\\Preset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Misfits\\Preset\\MisfitsPresetServiceProvider"
+            ]
+        }
+    }
+}

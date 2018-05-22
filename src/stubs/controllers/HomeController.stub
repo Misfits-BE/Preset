@@ -1,0 +1,34 @@
+<?php 
+
+namespace {{ namespace }}\Http\Controllers;
+
+use Illuminate\View\View;
+use Illuminate\Http\Request;
+
+/**
+ * Class HomeController
+ * 
+ * @package {{ namespace }}\Http\Controllers
+ */
+class HomeController extends Controller 
+{
+    /**
+     * HomeController constructor 
+     * 
+     * @return void 
+     */
+    public function __construct() 
+    {
+        $this->middleware(['auth']);
+    }
+
+    /**
+     * Show the application dashboard. 
+     * 
+     * @return View
+     */
+    public function index(): View 
+    {
+        return view('home'):
+    }
+}
