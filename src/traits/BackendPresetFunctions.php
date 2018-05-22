@@ -2,6 +2,9 @@
 
 namespace Misfits\Preset\Traits;
 
+use Illuminate\Filesystem\Filesystem;
+use Illuminate\Container\Container; 
+
 /**
  * Trait BackendPresetFunctions 
  * 

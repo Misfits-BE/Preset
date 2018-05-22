@@ -2,8 +2,6 @@
 
 namespace Misfits\Preset; 
 
-use Illuminate\Container\Container; 
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\Presets\Preset;
 use Misfits\Preset\Traits\{BackendPresetFunctions, FrontendPresetFunctions};
 
@@ -14,7 +12,7 @@ use Misfits\Preset\Traits\{BackendPresetFunctions, FrontendPresetFunctions};
  * @copyright   Tim Joosten
  * @package     Misfits\Preset
  */
-class MisfitsPreset
+class MisfitsPreset extends Preset
 {
     use BackendPresetFunctions, FrontendPresetFunctions; 
 
