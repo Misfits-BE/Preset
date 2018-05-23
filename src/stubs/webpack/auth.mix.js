@@ -22,5 +22,5 @@ mix // Laravel asset generator instance
     .sass('resources/assets/sass/backend.scss', 'public/css')
 
     // Authentication assets 
-    .js('resources/assets/js/login.js', 'public/js')
+    .copy('resources/assets/js/login.js', 'public/js')
     .sass('resources/assets/sass/login.scss', 'public/js');
