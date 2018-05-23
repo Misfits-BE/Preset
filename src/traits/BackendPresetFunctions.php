@@ -21,6 +21,7 @@ trait BackendPresetFunctions
      */
     protected static function updateSassBackend(): void 
     {
+        copy(__DIR__ . '/../stubs/scss/login.scss', resource_path('assets/sass/login.scss'));
         copy(__DIR__ . '/../stubs/scss/backend.scss', resource_path('assets/sass/backend.scss'));
     }
 
@@ -51,6 +52,16 @@ trait BackendPresetFunctions
             Container::getInstance()->getNamespace(),
             file_get_contents(__DIR__ . '/../stubs/controllers/HomeController.stub')
         );
+    }
+
+    /**
+     * Implement the webpack preset scaffoliding 
+     * 
+     * @return void 
+     */
+    protected static function webpackAuth(): void 
+    {
+        copy(__DIR__ . '/../stubs/webpack/auth.mix.js', base_path('webpack.mix.js'));
     }
 
     /**

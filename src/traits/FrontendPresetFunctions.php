@@ -27,7 +27,17 @@ trait FrontendPresetFunctions
     }
 
     /**
-     * Update the boostrapping process and JavaScript files in the scaffolding 
+     * Implement the webpack preset scaffoliding 
+     * 
+     * @return void 
+     */
+    protected static function webpack(): void 
+    {
+        copy(__DIR__ . '/../stubs/webpack/normal.mix.js', base_path('webpack.mix.js'))
+    }
+
+    /**
+     * Update the bootstrapping process and JavaScript files in the scaffolding 
      * 
      * @return void 
      */
@@ -37,7 +47,15 @@ trait FrontendPresetFunctions
         (new FileSystem)->delete(public_path('js/app.js'));
 
         copy(__DIR__ . '/../stubs/js/frontend.js', resource_path('assets/js/frontend.js'));
+    }
+
+    /**
+     * Update the bootstrapping process and Javascript for the authentication scaffolding
+     */
+    protected static function updateBootstrappingAuth() 
+    {
         copy(__DIR__ . '/../stubs/js/backend.js', resource_path('assets/js/backend.js'));
+        copy(__DIR__ . '/../stubs/js/login.js', resource_path('assets/js/login.js'));
     }
 
     /**

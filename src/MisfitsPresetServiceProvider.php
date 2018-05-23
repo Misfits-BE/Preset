@@ -28,7 +28,8 @@ class MisfitsPresetServiceProvider extends ServiceProvider
          * @return void
          */
         PresetCommand::macro('misfits', function ($command): void {
-            MisfitsPreset::install(); 
+            MisfitsPreset::install();
+            MisfitsPreset::webpack(); 
 
             $command->info('Misfits scaffolding installed successfully.'); 
             $command->info('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
@@ -42,6 +43,7 @@ class MisfitsPresetServiceProvider extends ServiceProvider
          */
         PresetCommand::macro('misfits-auth', function ($command): void {
             MisfitsPreset::installAuth(); 
+            MisfitsPreset::webpackAuth();
 
             $command->info('Misfits scaffolding with auth views installed successfully.');
             $command->info('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
