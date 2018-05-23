@@ -59,7 +59,7 @@ trait BackendPresetFunctions
      * 
      * @return void 
      */
-    protected static function webpackAuth(): void 
+    public static function webpackAuth(): void 
     {
         copy(__DIR__ . '/../stubs/webpack/auth.mix.js', base_path('webpack.mix.js'));
     }

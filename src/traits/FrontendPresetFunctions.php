@@ -31,7 +31,7 @@ trait FrontendPresetFunctions
      * 
      * @return void 
      */
-    protected static function webpack(): void 
+    public static function webpack(): void 
     {
         copy(__DIR__ . '/../stubs/webpack/normal.mix.js', base_path('webpack.mix.js'));
     }
