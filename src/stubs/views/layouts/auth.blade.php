@@ -8,7 +8,7 @@
         <title> {{ config('app.name') }} - @yield('title') </title>
 
         {{-- Styles --}}
-        <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/login.css') }}">
         <link rel="shortcut icon" type="image/png" href="{{ asset('img/favicon.ico') }}"/>
     </head>
     <body class="my-login-page">
@@ -19,6 +19,6 @@
         </div>
 
         {{-- JavaScript --}}
-        <script src="{{ asset('js/auth.js') }}"></script>
+        <script src="{{ asset('js/login.js') }}"></script>
     </body>
 </html>

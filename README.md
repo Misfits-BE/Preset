@@ -11,4 +11,4 @@ Preset for [Misfits-BE](https://www.activisme.be) on a new Laravel 5.6.x project
 5. `npm run dev`
 6. Configure your favorite database (MySQL, SQLite etc.)
 7. `php artisan migrate` to create basic user tables. 
-8. `php artisan serve` (or equivalent) to run the server and test the preset.
+8. `php artisan serve` (or equivalent) to run the server and test the preset
