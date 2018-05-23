@@ -38,5 +38,6 @@ class MisfitsPreset extends Preset
         static::install(); 
         static::scaffoldAuth();
         static::updateSassBackend();
+        static::updateBootstrappingAuth();
     }
 }
