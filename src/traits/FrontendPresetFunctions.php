@@ -21,7 +21,7 @@ trait FrontendPresetFunctions
     protected static function updateSassFrontend(): void 
     {
         (new Filesystem)->delete(resource_path('assets/sass/app.scss'));
-        (new Filesystem)->delete(public_path('assets/sass/app.css'));
+        (new Filesystem)->delete(public_path('css/app.css'));
 
         copy(__DIR__ . '/../stubs/scss/frontend.scss', resource_path('assets/sass/frontend.scss'));
     }
