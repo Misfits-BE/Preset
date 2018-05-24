@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02ffb8c4-2376-41fb-93a9-2aa863acdf81" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/stubs/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/views/layouts/backend.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stubs/views/layouts/frontend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/views/layouts/frontend.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/traits/BackendPresetFunctions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/traits/BackendPresetFunctions.php" afterDir="false" />
       <change beforePath="B:/boiler/composer.json" beforeDir="false" afterPath="B:/boiler/composer.json" afterDir="false" />
       <change beforePath="B:/boiler/composer.lock" beforeDir="false" afterPath="B:/boiler/composer.lock" afterDir="false" />
       <change beforePath="B:/boiler/public/css/app.css" beforeDir="false" />
@@ -63,12 +63,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backend.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="backend.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stubs/views/layouts/backend.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="136">
               <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackendPresetFunctions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/traits/BackendPresetFunctions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://B:/boiler/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="MisfitsPresetServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MisfitsPresetServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-384" />
           </provider>
         </entry>
       </file>
@@ -83,6 +104,7 @@
         <option value="B:/boiler/.env" />
         <option value="$PROJECT_DIR$/src/stubs/views/layouts/frontend.blade.php" />
         <option value="$PROJECT_DIR$/src/stubs/views/layouts/backend.blade.php" />
+        <option value="$PROJECT_DIR$/src/traits/BackendPresetFunctions.php" />
       </list>
     </option>
   </component>
@@ -143,6 +165,21 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Preset" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Preset" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="traits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Preset" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boiler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Preset" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boiler" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -178,12 +215,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527148818196</updated>
-      <workItem from="1527148819332" duration="398000" />
+      <workItem from="1527148819332" duration="632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398000" />
+    <option name="totallyTimeSpent" value="632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -244,10 +281,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://B:/boiler/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MisfitsPresetServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/stubs/views/layouts/backend.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="136">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/traits/BackendPresetFunctions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
         </state>
       </provider>
     </entry>

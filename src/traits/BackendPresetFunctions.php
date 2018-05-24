@@ -67,7 +67,7 @@ trait BackendPresetFunctions
     /**
      * Add the authentication scaffolding routes to the routes/web.php routes
      * 
-     * @return void
+     * @return string
      */
     protected static function routesAuthencation(): string 
     {
@@ -76,11 +76,9 @@ trait BackendPresetFunctions
             Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');\n
             Route::post('login', 'Auth\LoginController@login');\n
             Route::post('logout', 'Auth\LoginController@logout')->name('logout');\n\n
-
             // Registration Routes\n
             Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');\n
             Route::post('register', 'Auth\RegisterController@register');\n\n
-
             // Password Reset Routes\n
             Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');\n
             Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');\n
