@@ -43,7 +43,7 @@ trait BackendPresetFunctions
      * --- 
      * Needed for rename the {{ namespace }} placeholder to the actual application namespace
      * 
-     * @return void
+     * @return string
      */
     protected static function compileControllerStubHome(): string 
     {
@@ -71,20 +71,6 @@ trait BackendPresetFunctions
      */
     protected static function routesAuthencation(): string 
     {
-        return "
-            // Authentication Routes\n
-            Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');\n
-            Route::post('login', 'Auth\LoginController@login');\n
-            Route::post('logout', 'Auth\LoginController@logout')->name('logout');\n\n
-            // Registration Routes\n
-            Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');\n
-            Route::post('register', 'Auth\RegisterController@register');\n\n
-            // Password Reset Routes\n
-            Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');\n
-            Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');\n
-            Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');\n
-            Route::post('password/reset', 'Auth\ResetPasswordController@reset');\n
-            Route::get('/home', 'HomeController@index')->name('home');\n\n
-        ";
+        return "Auth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n";
     }
 }
